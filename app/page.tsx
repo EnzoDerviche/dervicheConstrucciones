@@ -5,7 +5,8 @@ import ServicesSection from "../components/ServicesSection"
 import ContactSection from "../components/ContactSection"
 import LocationSection from "../components/LocationSection"
 import Footer from "../components/Footer"
-import FloatingButtons from "../components/FloatingButtons"
+import { FloatingButtons } from "../components/FloatingButtons"
+import GallerySection from "@/components/GallerySection"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <GallerySection />
       <ContactSection />
       <LocationSection />
       <Footer />

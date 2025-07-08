@@ -3,14 +3,15 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Phone, MapPin } from "lucide-react"
+import { openWhatsApp } from "@/hooks/send-whatsapp"
 
 export default function ContactSection() {
   const contactInfo = [
     {
       icon: Phone,
       title: "Teléfono",
-      info: "+54 11 1234-5678",
-      link: "tel:+541112345678",
+      info: "+54 11 6662-1082",
+      link: "tel:+541166621082",
     },
     {
       icon: MapPin,
@@ -72,16 +73,14 @@ export default function ContactSection() {
                   <Button
                     variant="secondary"
                     className="bg-white text-amber-600 hover:bg-gray-100 px-6 py-3 text-lg font-semibold"
-                    onClick={() => window.open("tel:+541112345678")}
+                    onClick={() => window.open("tel:+541166621082")}
                   >
                     Llamar Ahora
                   </Button>
                   <Button
                     variant="secondary"
                     className="bg-white text-green-600 hover:bg-gray-100 px-6 py-3 text-lg font-semibold"
-                    onClick={() =>
-                      window.open("https://wa.me/5491123456789?text=Hola, necesito una cotización urgente")
-                    }
+                    onClick={openWhatsApp}
                   >
                     WhatsApp
                   </Button>
